@@ -69,10 +69,9 @@ public class Zimski02 {
 			}
 			System.out.println();
 			
-			
-			
-	     
-				
+			System.out.format("%s %3s %3s %7s by Marko",":  :",":  :",":  :",":");
+	
+			}
 				
 
 			}
@@ -81,7 +80,7 @@ public class Zimski02 {
 
 
 		 }
-	}
+	
 
 	
 
