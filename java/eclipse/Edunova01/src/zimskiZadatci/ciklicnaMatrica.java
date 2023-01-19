@@ -1,67 +1,74 @@
 package zimskiZadatci;
 
+import javax.swing.JOptionPane;
+
 public class ciklicnaMatrica {
-	public static void main(String[] args) {
-		// postaviti velicinu matrice
-		int velicina = 5;
-
-		// kreirati matricu
-		int[][] matrica = new int[velicina][velicina];
-
-		// dodati brojcane varijable
-		int brojac = 1;
-		int red = 0;
-		int col = 0;
-		int smjer = 1; // 1 = desno, 2 = dolje, 3 = lijevo, 4 = gore
-		while (brojac <= velicina * velicina) {
-			matrica[red][col] = brojac;
-			brojac++;
-
-			switch (smjer) {
+	
+		public static void main(String[] args) {
 			
-		case 1 :// desno
-				if (col + 1 >= velicina || matrica[red][col + 1] != 0) {
-					smjer = 2;
-					red++;
-				} else {
-					col++;
+			int x = Integer.parseInt(JOptionPane.showInputDialog("Unesite Visinu"));
+			int y = Integer.parseInt(JOptionPane.showInputDialog("Unesite Sirinu"));
+
+			int Matrica[][] = new int[x][y];
+			int counter = 1;
+
+			int Maxvisina = x - 1;
+			int Minvisina = 0;
+			int Maxsirina = y - 1;
+			int Minsirina = 0;
+
+			izvan: 
+			for (; counter <= x * y;) {
+
+				for (int j = Maxsirina; j >= Minsirina; j--) {
+					if (counter > x * y) {
+						break izvan;
+					} else {
+						Matrica[Maxvisina][j] = counter++;
+					}
+
 				}
-				break;
-		case 2 :// dolje
-				if (red + 1 >= velicina || matrica[red + 1][col] != 0) {
-					smjer = 3;
-					col--;
-				} else {
-					red++;
+				Maxvisina--;
+
+				for (int j = Maxvisina; j >= Minvisina; j--) {
+
+					if (counter > x * y) {
+						break izvan;
+					} else {
+						Matrica[j][Minsirina] = counter++;
+					}
 				}
-				break;
-		case 3 : // lijevo
-				if (col - 1 < 0 || matrica[red][col - 1] != 0) {
-					smjer = 4;
-					red--;
-				} else {
-					col--;
+				Minsirina++;
+
+				for (int j = Minsirina; j <= Maxsirina; j++) {
+
+					if (counter > x * y) {
+						break izvan;
+					} else {
+						Matrica[Minvisina][j] = counter++;
+					}
 				}
-				break;
-		case 4 : // gore
-				if (red - 1 < 0 || matrica[red - 1][col] != 0) {
-					smjer = 1;
-					col++;
-				} else {
-					red--;
+				Minvisina++;
+
+				for (int j = Minvisina; j <= Maxvisina; j++) {
+
+					if (counter > x * y) {
+						break izvan;
+					} else {
+						Matrica[j][Maxsirina] = counter++;
+					}
 				}
-				break;
+				Maxsirina--;
+			}
+
+			for (
+
+					int i = 0; i < x; i++) {
+				for (int j = 0; j < y; j++) {
+					System.out.print(Matrica[i][j] + "\t");
+				}
+				System.out.println();
 			}
 		}
 
-		// Print matricu
-		for (int i = 0; i < velicina; i++) {
-			for (int j = 0; j < velicina; j++) {
-				System.out.print(matrica[i][j] + " ");
-
-			}
-
-			System.out.println();
-		}
 	}
-}
