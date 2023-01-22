@@ -78,5 +78,5 @@ public class Pomocno {
 	}
 
 }
-
+// dodati smjer i zupaniju
 
