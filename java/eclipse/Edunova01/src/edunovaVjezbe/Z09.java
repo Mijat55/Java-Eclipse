@@ -1,4 +1,4 @@
-package Edunova02;
+package edunovaVjezbe;
 
 import javax.swing.JOptionPane;
 
@@ -11,8 +11,8 @@ public class Z09 {
 		// Program ispisuje 1. znamenku upisanog broja
 		int i =Integer.parseInt(JOptionPane.showInputDialog("Unesi broj"));
 		
-		if(i>999 ) {
-			System.out.println("Greska"); 
+		if(i>999 ) { System.out.println("Greska"); 
+			
 			
 		}else System.out.println(i);
 		

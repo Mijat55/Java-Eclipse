@@ -1,4 +1,4 @@
-package Edunova02;
+package edunovaVjezbe;
 
 public class Z12 {
 	public static void main(String[] args) {

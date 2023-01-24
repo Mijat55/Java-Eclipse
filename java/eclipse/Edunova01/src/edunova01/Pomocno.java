@@ -1,8 +1,8 @@
-package Edunova02;
+package edunova01;
 
 import javax.swing.JOptionPane;
 
-public class Test {
+public class Pomocno {
 	public static int ucitajCijeliBroj(String porukaKorisniku, String obavijestOGresci) {
 		while (true) {
 			try {
@@ -77,4 +77,53 @@ public class Test {
 		return (int) ((Math.random() * (max - min)) + min);
 	}
 
+
+// dodati smjer i zupaniju
+public static boolean ucitajBoolean(String porukaKorisniku) {
+	
+	{
+		while(true) {
+			int bool=Integer.parseInt(JOptionPane.showInputDialog(porukaKorisniku+" 1-Da,0-Ne"));
+			
+			switch (bool){
+			case 1: {
+				
+				return true;
+			}
+			
+			case 0:{
+				return false;
+			}
+			default:
+				JOptionPane.showMessageDialog(null, "Obavezan upis 1 ili 0");
+			}
+			
+			
+			
+		}
+	}
+}
+
+
+
+
+public static double ucitajDecimalniBroj(String porukaKorisniku) {
+	while (true) {
+		try {
+			return Double.parseDouble(JOptionPane.showInputDialog(porukaKorisniku));
+		} catch (Exception e) {
+			JOptionPane.showMessageDialog(null, "Greska pri unosu");
+		}
+	}
+}
+
+public static long ucitajDugiCijeliBroj(String porukaKorisniku) {
+	while (true) {
+		try {
+			return Long.parseLong(JOptionPane.showInputDialog(porukaKorisniku));
+		} catch (Exception e) {
+			JOptionPane.showMessageDialog(null, "Greska pri unosu");
+		}
+	}
+}
 }

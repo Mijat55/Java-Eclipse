@@ -1,4 +1,4 @@
-package edunova;
+package zimskiZadatci;
 
 import javax.swing.JOptionPane;
 

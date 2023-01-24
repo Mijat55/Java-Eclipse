@@ -52,9 +52,9 @@ public class Zimski01 {
 		if(dvadesetcetvrtiBroj<min)min=dvadesetcetvrtiBroj;
 		
 		
-		System.out.println(zbroj);
-		System.out.println(max);
-		System.out.println(min);
+		System.out.println(" Zbroj svih unesenih brojeva" + " " +zbroj);
+		System.out.println("Maksimalni uneseni broj" + " " +max);
+		System.out.println("Minimalni uneseni broj" + " " +min);
 		
 			
 		}

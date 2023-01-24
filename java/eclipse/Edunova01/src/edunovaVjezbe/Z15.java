@@ -1,4 +1,4 @@
-package Edunova02;
+package edunovaVjezbe;
 
 public class Z15 {
 	// Napišite metodu koja prima

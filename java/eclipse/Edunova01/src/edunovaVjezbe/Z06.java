@@ -1,4 +1,4 @@
-package Edunova02;
+package edunovaVjezbe;
 
 import javax.swing.JOptionPane;
 

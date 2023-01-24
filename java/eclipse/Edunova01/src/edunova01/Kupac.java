@@ -1,4 +1,4 @@
-package Edunova03;
+package edunova01;
 
 public class Kupac {
 	private String ime;
