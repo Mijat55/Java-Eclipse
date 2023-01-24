@@ -1,22 +1,22 @@
 package Edunova03;
 
 public class Racunalo {
-	private String imeModela;
-	private int cijenaUredjaja;
+	private String imeProcesora;
+	private int brojJezgri;
 	private double brzinaProcesora;
-	private boolean azuriranje;
-	private char energetskaVrijednost;
-	public String getImeModela() {
-		return imeModela;
+	private boolean vanjskaGraficka;
+	private long serijskiBrojRacunala;
+	public String getImeProcesora() {
+		return imeProcesora;
 	}
-	public void setImeModela(String imeModela) {
-		this.imeModela = imeModela;
+	public void setImeProcesora(String imeProcesora) {
+		this.imeProcesora = imeProcesora;
 	}
-	public int getCijenaUredjaja() {
-		return cijenaUredjaja;
+	public int getBrojJezgri() {
+		return brojJezgri;
 	}
-	public void setCijenaUredjaja(int cijenaUredjaja) {
-		this.cijenaUredjaja = cijenaUredjaja;
+	public void setBrojJezgri(int brojJezgri) {
+		this.brojJezgri = brojJezgri;
 	}
 	public double getBrzinaProcesora() {
 		return brzinaProcesora;
@@ -24,18 +24,18 @@ public class Racunalo {
 	public void setBrzinaProcesora(double brzinaProcesora) {
 		this.brzinaProcesora = brzinaProcesora;
 	}
-	public boolean isAzuriranje() {
-		return azuriranje;
+	public boolean isVanjskaGraficka() {
+		return vanjskaGraficka;
 	}
-	public void setAzuriranje(boolean azuriranje) {
-		this.azuriranje = azuriranje;
+	public void setVanjskaGraficka(boolean vanjskaGraficka) {
+		this.vanjskaGraficka = vanjskaGraficka;
 	}
-	public char getEnergetskaVrijednost() {
-		return energetskaVrijednost;
+	public long getSerijskiBrojRacunala() {
+		return serijskiBrojRacunala;
 	}
-	public void setEnergetskaVrijednost(char energetskaVrijednost) {
-		this.energetskaVrijednost = energetskaVrijednost;
+	public void setSerijskiBrojRacunala(long serijskiBrojRacunala) {
+		this.serijskiBrojRacunala = serijskiBrojRacunala;
 	}
 	
-
+	
 }

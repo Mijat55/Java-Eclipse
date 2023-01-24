@@ -4,18 +4,22 @@ import java.util.Date;
 
 public class Start {
 	public static void main(String[] args) {
+		
 		Racunalo[] racunalo = new Racunalo[2];
 		racunalo[0]=kreirajRacunalo(
-			Pomocno.obavezanUnosStringa(null)
-			Pomocno.ucitajCijeliBroj()
+				Pomocno.obavezanUnosStringa("Upisi ime racunala"),
+				Pomocno.ucitajCijeliBroj("Upisi broj jezgri procesora"),
+				Pomocno.ucitajCijeliBroj("Upisi brzinu procesora u Ghz"),
+				Pomocno.ucitajBoolean("Vanjska graficka?"),
+				Pomocno.ucitajCijeliBroj("Upisi serijski broj racunala")
 				);
 		
 		racunalo[1]=kreirajRacunalo(
 				Pomocno.obavezanUnosStringa("Upisi ime racunala"),
 				Pomocno.ucitajCijeliBroj("Upisi broj jezgri procesora"),
-				Pomocno.ucitajDecimalniBroj("Upisi brzinu procesora u Ghz"),
+				Pomocno.ucitajCijeliBroj("Upisi brzinu procesora u Ghz"),
 				Pomocno.ucitajBoolean("Vanjska graficka?"),
-				Pomocno.ucitajDugiCijeliBroj("Upisi serijski broj racunala")
+				Pomocno.ucitajCijeliBroj("Upisi serijski broj racunala")
 				);
 		
 		System.out.println("["+racunalo[0].getImeProcesora()+", "+
@@ -32,8 +36,8 @@ public class Start {
 		
 //		*********************************ZADATAK 2.*********************************************************
 		
-		Kupac filip = kreirajKupca("Marko Mijatovć", "Savska 15");
-		Kupac iva = kreirajKupca("Marina Mijatović", "Savska 15");
+		Kupac Marko = kreirajKupca("Marko Mijatovć", "Savska 15");
+		Kupac Marina = kreirajKupca("Marina Mijatović", "Savska 15");
 		
 		Racun prviRacun = kreirajRacun(new Date(), 1.5, Marina);
 		Racun drugiRacun= kreirajRacun(new Date(), 8, Marina);
@@ -51,11 +55,11 @@ public class Start {
 	private static Racunalo kreirajRacunalo(String imeProcesora, int brojJezgri, double brzinaProcesora,boolean vanjskaGraficka, long serijskiBrojRacunala)
 	{
 		Racunalo racunalo = new Racunalo();
-		racunalo.setImeModela(ime);
-		racunalo.setCijenaUredjaja(brojJezgri);
+		racunalo.setImeProcesora(imeProcesora);
+		racunalo.setBrojJezgri(brojJezgri);
 		racunalo.setBrzinaProcesora(brzinaProcesora);
-		racunalo.setEnergetskaVrijednost('A');
-		racunalo.setAzuriranje(true);
+		racunalo.setVanjskaGraficka(vanjskaGraficka);
+		racunalo.setSerijskiBrojRacunala(serijskiBrojRacunala);
 		return racunalo;
 
 	}
