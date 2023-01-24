@@ -34,7 +34,7 @@ public class Start {
 							racunalo[1].isVanjskaGraficka()+", "+
 							racunalo[1].getSerijskiBrojRacunala()+"]");
 		
-//		*********************************ZADATAK 2.*********************************************************
+
 		
 		Kupac Marko = kreirajKupca("Marko Mijatovć", "Savska 15");
 		Kupac Marina = kreirajKupca("Marina Mijatović", "Savska 15");
