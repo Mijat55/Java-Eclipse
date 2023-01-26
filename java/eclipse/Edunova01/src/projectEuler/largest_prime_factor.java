@@ -9,7 +9,7 @@ public class largest_prime_factor {
 		//// What is the largest prime factor of the number 600851475143 ?
 	      BigInteger number = new BigInteger("600851475066");
 	        BigInteger largestPrime = number.nextProbablePrime();
-	        System.out.println("Largest prime number: " + largestPrime);
+	        System.out.println("Najveci primarni broj: " + largestPrime);
 	    }
 	
 
