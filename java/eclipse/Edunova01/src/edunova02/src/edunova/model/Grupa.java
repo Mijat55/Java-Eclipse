@@ -1,4 +1,4 @@
-package edunova.model;
+package edunova02.src.edunova.model;
 
 import java.util.ArrayList;
 import java.util.Date;

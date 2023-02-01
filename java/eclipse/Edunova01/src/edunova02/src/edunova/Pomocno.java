@@ -1,4 +1,4 @@
-package edunova;
+package edunova02.src.edunova;
 
 import java.util.Scanner;
 

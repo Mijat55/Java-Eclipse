@@ -1,4 +1,4 @@
-package edunova.model;
+package edunova02.src.edunova.model;
 
 public abstract class Entitet {
 

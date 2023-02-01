@@ -1,4 +1,4 @@
-package edunova.model;
+package edunova02.src.edunova.model;
 
 public class Polaznik extends Osoba {
 
