@@ -27,3 +27,4 @@ public class Racun {
 	
 
 }
+// treba doddati polaznik
