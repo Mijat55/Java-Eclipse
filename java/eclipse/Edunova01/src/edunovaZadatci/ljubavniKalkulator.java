@@ -69,4 +69,5 @@ public class ljubavniKalkulator {
 }
 //prvo ime
 //drugo ime
+// napraviti u netbeansu
 
