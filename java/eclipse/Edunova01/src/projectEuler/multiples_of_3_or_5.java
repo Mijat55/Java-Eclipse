@@ -32,5 +32,5 @@ public class multiples_of_3_or_5 {
 		
 		
 
-
+//gotovo
 
